@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import {Navbar} from "widgets/Navbar";
+import { Navbar } from 'widgets/Navbar';
 
 export default {
     title: 'widgets/Navbar',
