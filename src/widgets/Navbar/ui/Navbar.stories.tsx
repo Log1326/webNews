@@ -1,11 +1,12 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Navbar } from 'widgets/Navbar';
+import { Navbar } from './Navbar';
 
 export default {
-    title: 'widgets/Navbar',
+    title: 'widget/Navbar',
     component: Navbar,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -15,11 +16,8 @@ export default {
 const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 
 export const Light = Template.bind({});
-Light.args = {
-};
+Light.args = {};
 
 export const Dark = Template.bind({});
-Dark.args = {
-};
-
+Dark.args = {};
 Dark.decorators = [ThemeDecorator(Theme.DARK)];

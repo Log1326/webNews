@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
+import { AppLink, AppLinkTheme } from './AppLink';
 
 export default {
     title: 'shared/AppLink',
@@ -22,18 +22,18 @@ Primary.args = {
     children: 'Text',
     theme: AppLinkTheme.PRIMARY,
 };
+
 export const Secondary = Template.bind({});
 Secondary.args = {
     children: 'Text',
     theme: AppLinkTheme.SECONDARY,
 };
+
 export const Red = Template.bind({});
 Red.args = {
     children: 'Text',
     theme: AppLinkTheme.RED,
 };
-
-// DARK THEME
 
 export const PrimaryDark = Template.bind({});
 PrimaryDark.args = {
