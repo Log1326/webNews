@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.placeholder {
+    margin-right: 5px;
+}
+
 .input {
     background: transparent;
     border: none;
@@ -27,7 +31,7 @@
     bottom: 0;
     left: 0;
     position: absolute;
-    animation: blink 0.8s forwards infinite;
+    animation: blink 0.7s forwards infinite;
 }
 
 @keyframes blink {
@@ -36,7 +40,7 @@
     }
 
     50% {
-        opacity: 0.05;
+        opacity: 0.01;
     }
 
     100% {
