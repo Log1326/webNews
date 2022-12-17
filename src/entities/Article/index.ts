@@ -1,9 +1,6 @@
 export {
     ArticleDetails,
 } from './ui/ArticleDetails/ArticleDetails';
-export type {
-    Article,
-} from './modal/types/article';
-export {
-    ArticleDetailsSchema,
-} from './modal/types/articleDetailsSchema';
+
+export type { Article } from './model/types/article';
+export type { ArticleDetailsSchema } from './model/types/articleDetailsSchema';
